@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body {
+  height: 100vh;
+  background-image: url(/background1.png); 
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #e74c3c;
+  background-size: cover;
+}
+    
+input {
+  padding: 10px;
+  font-size: 16px;
+}  
+
+.container{
+  display: flex;
+  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+  justify-content: center; /* Centraliza na vertical */
+  align-items: center; /* Centraliza na horizontal */
+  height: 100vh; /* Faz o container ocupar toda a tela */
+  text-align: center; /* Garante que o texto fique alinhado */
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: purple;
+  border: none;
+  cursor: pointer;
+}
+button{
+  background-color: #ec7063; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  border-radius: 10px; /* Deixa as bordas arredondadas */
+  cursor: pointer; /* Muda o cursor ao passar por cima */
+  transition: 0.3s; /* Suaviza os efeitos */
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #b03a2e; /* Muda a cor quando passa o mouse */
+}
+
+input {
+  width: 250px; /* Largura do campo */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border: 2px solid #fdfefe; /* Cor da borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  outline: none; /* Remove o contorno azul ao clicar */
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #e74c3c; /* Muda a cor da borda quando o usuário clica */
+  box-shadow: 0 0 10px #e74c3c; /* Adiciona um brilho ao redor */
+}
+
+/*h1 {
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fdfefe;  Muda a cor para testar 
+  font-size: 50px;
+  color: #fff; Cor do texto 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+} */
+
+h1 {
+  margin-top: -30px; /* Move para cima */
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+      color: #fff;
+      text-shadow: 0 0 5px #e74c3c, 0 0 10px #e74c3c, 0 0 15px #e74c3c;
+      animation: brilho 1.5s infinite alternate;
+  }
+
+  @keyframes brilho {
+      0% {
+          text-shadow: 0 0 5px #e74c3c, 0 0 10px #e74c3c, 0 0 15px #e74c3c;
+      }
+      100% {
+          text-shadow: 0 0 20px #e74c3c, 0 0 30px #e74c3c, 0 0 40px #e74c3c;
+      }
+}
+
+p {
+  background-color: #e74c3c; /* Preto com 50% de transparência */
+  color: white; /* Deixa o texto visível */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border-radius: 7px; /* Bordas arredondadas */
+}
+
+
+footer {
+  background-color: #e74c3c; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  width: 100%; /* Ocupa toda a largura */
+  font-size: 16px; /* Ajusta tamanho do texto */
+  position: relative; /* Deixa o footer no fluxo normal */
+  bottom: 0; /* Apenas para garantir que fique no final */
+}
+
+#mensagem-erro {
+  color: red;  /* Cor do texto de erro */
+  font-size: 18px;  /* Tamanho da fonte */
+  font-weight: bold;  /* Deixa o texto mais forte */
+  margin-top: 10px;  /* Espaçamento acima da mensagem */
+  text-align: center;  /* Centraliza a mensagem */
+  background-color: #ffcccc;  /* Cor de fundo suave */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contexto {
+  font-family: 'Arial', sans-serif; /* Escolhe uma fonte bonita */
+  font-size: 15px; /* Define o tamanho do texto */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  text-align: center; /* Centraliza o texto */
+  color: #f8f0f8; /* Cor do texto */
+  background-color: #e74c3c; /* Cor de fundo suave */
+  border-radius: 13px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  width: 70%; /* Largura do parágrafo */
+  margin: 20px auto; /* Centraliza o parágrafo e coloca margem em cima e embaixo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}

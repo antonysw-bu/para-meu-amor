@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💘</title>
+    <link rel="stylesheet" href="pag2.css">
+</head>
+<body>
+
+    <!-- Background principal -->
+    <div class="background-principal">
+           <h1>💌 Minha carta de amor</h1>
+           <h1 id="contador">Estamos juntos há 0 dias, 0 horas, 0 minutos e 0 segundos.</h1>
+        </div>
+
+    </div>
+
+    <!-- Seção inicial (Imagem e Texto) -->
+    <section class="section-inicial">
+        <div class="carousel">
+            <div class="slides">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <img src="foto3.jpg" alt="Foto 3">
+                <img src="foto4.jpg" alt="Foto 4">
+                <img src="img5.jpg" alt="Foto 5">
+            </div>
+        </div>
+
+        <div class="texto">
+            <h2>Nossa historia juntos 💞 </h2>
+            <p>Nossa história começou no dia 07 de outubro. Lembro claramente do nosso primeiro beijo. Estávamos sentados no banco da igreja, quando você finalmente terminou aquele seu espetão de carne, e a gente continuou conversando até que, do nada, você decidiu roubar um beijo meu. Fiquei completamente sem reação, tentando processar o que tinha acontecido. Meu coração acelerou, e nem consegui raciocinar direito. Aquele dia foi incrível, e até voltei saltitante para casa, pensando no nosso beijo. <br>
+
+                <br>Depois daquele dia, você não roubou apenas um beijo, mas também meu coração. Todos esses três meses ao seu lado foram loucamente incríveis. Cada momento que passamos juntos foi extremamente especial. A cada dia que passa, me apaixono mais por você. Cada detalhe seu é perfeito, e me considero sortudo por estar ao seu lado e ter a oportunidade de te conhecer melhor todos os dias. <br>
+
+               <br> Sei que ainda somos apenas dois adolescentes apaixonados, que ainda estamos aprendendo a amar. Sei também que somos novos e que ainda iremos enfrentar muitos desafios. Com certeza, nosso caminho será longo e difícil, mas espero que possamos continuar firmes e fortes, enfrentando tudo juntos. Quero ver você crescendo e se tornando uma pessoa ainda melho, também quero me tornar uma pessoa melhor junto de você! <br>
+
+                <br>O que eu planejo ter com você é algo muito além de um simples namoro na adolescência. Quero te levar para a vida toda, meu amor.
+
+</p>
+        </div>
+    </section>
+
+    <!-- Parallax -->
+    <div class="parallax"></div>
+
+    <!-- Seção final -->
+    <section class="section-final">
+        <h2>Para Sempre Nós</h2>
+        <p>Sei que estamos apenas no começo da nossa caminhada. Acabamos de completar três meses juntos, e, relativamente, foi pouco tempo. Porém, dentro desses três meses, vivi coisas incríveis ao seu lado, momentos inesquecíveis. 
+
+            Ao seu lado, tudo fica melhor. Não importa onde estou, se estou com você, tudo se torna perfeito. Mesmo nos momentos difíceis, seu sorriso ilumina meu mundo. O que eu sinto por você é algo que não consigo colocar em palavras. Além de amá-la, eu a admiro profundamente. 
+
+            Você é uma mulher forte, que me inspira a ser alguém melhor todos os dias. Quero, um dia, formar uma família com você. Sei que é um sonho distante, com um longo caminho cheio de obstáculos pela frente, mas acredito que, juntos, conseguiremos alcançar todos os nossos objetivos e, um dia, chegaremos lá. 
+
+            Eu te amo, meu amor, e quero ficar ao seu lado sempre. Esses três meses ao seu lado foram os mais incríveis possíveis. Obrigado por estar comigo.
+</p>
+    </section>
+    </body>
+    <script>
+        const dataInicio = new Date("2024-12-06T00:00:00").getTime();
+
+        function atualizarContador() {
+            const agora = new Date().getTime();
+            const distancia = agora - dataInicio;
+
+            const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML = `Estamos juntos há ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos.`;
+        }
+
+        setInterval(atualizarContador, 1000);
+    </script>
+</html>
+
