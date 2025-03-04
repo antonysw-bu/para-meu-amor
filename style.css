@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-image: url(/background1.png); 
+  background-image: url('background1.png'); 
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #e74c3c;
